@@ -1,0 +1,57 @@
+@import url(https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap);
+
+body{
+  background-image: linear-gradient( to left, #0A4B61, #1186AD, #16AEE0, #4DCFFA, #145063);
+}
+
+.title{
+  font-family: 'Sansita Swashed', cursive;
+  text-align: center;
+}
+
+#game{
+  width: 500px;
+  height: 200px;
+  border: 2px solid black;
+  padding: 0px;
+  margin: auto;
+}
+
+#person{
+  width: 20px;
+  height: 50px;
+  background-color: yellow;
+  position: relative;
+  top: 150px;
+  left: 20px;
+}
+
+.animation{
+  animation: person 500ms infinite linear;
+}
+
+@keyframes person{
+  0%{top: 150px;}
+  30%{top: 100px;}
+  70%{top: 100px;}
+  100%{top: 150px;}
+}
+
+#square{
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  position: relative;
+  top: 130px;
+  left: 480px;
+  animation: square 1s infinite linear;
+}
+
+@keyframes square{
+  0%{left: 480px;}
+  100%{left: -1px;}
+}
+
+#line{
+  width: 500px;
+}
